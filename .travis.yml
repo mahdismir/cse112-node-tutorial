@@ -1,9 +1,13 @@
 language: node_js
-
 node_js:
-  - "6"
-
+- '6'
 before_script:
-  - npm install -g gulp
-
+- npm install -g gulp
 script: gulp
+deploy:
+  provider: heroku
+  api_key:
+    secure: AUgP/ERbpHmAdjQ05HP7UvxrQzhEjHnx2Auj6VW9sDaSpfjIHn5DL6uYy6nMhpYqPmmyTGHHQVZSlNLxhMkWCeoppaFzPJVPkWtyS11vJTFaUMHMwEcwMrGbFwcNAv1XMM5d7u4E5JaRheee6qo+yOHpTNOYX/Afhv3iF6wt798D4tDlciV1OJLtkfbbb/UL6vohq2a4o582llB6iQBRw4tonrQMhgAd0YczBmE7rGxectdJOrF0+KXkrwpZ26tvYkuKX1m4mu+VMsxx1+end7R6hGsWt2b+lqWW5SG3V5/Q8ZwKKH6nl0DnKBVresr9Anyui/tlIuwHptnKwywB4ZCo0ZBiIP6kLzquRZN+x+IlXuHQMkrQkZuse5cC4UlK+/UjqYUF0lmpDcccCgCQJ5ANY5rfSur2SilxjkIF1REP1Gb6h72rJbyYjtiaxzFdQGuEP0NcqUewENUhy9yW2AiBNUjgZBlr3+2r6InOCivy/5Bkzvc+M4t5yJH5KtQteBhAg3ewZQUc7dWy/mHAhKl+w81PIm3sMigSjHP3XLXJZ6ou1P4UusqiwqZHHBeKch5H1Ox0zfN9F2hIavP1pJ5m+okGnjWeDehSG43a7BzJpMVZMMa8FWT0AoOyWokK7xTZX6EeumFduniaJ2MYpOXtRnC8/SkAYVp6oFzwSW0=
+  app: cse112-node-tutorial
+  on:
+    repo: mahdismir/cse112-node-tutorial
